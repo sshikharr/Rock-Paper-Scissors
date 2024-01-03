@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css"></link>
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>   
+    <button class="button" onclick="
+    let computer_choice=comp_choice();
+    who_won(computer_choice, 'Rock');
+    ">
+    <b><img src="Rock.png" alt="Rock"></b>  </button>
+
+
+    <button class="button" onclick="
+    computer_choice=comp_choice();
+    who_won(computer_choice, 'Paper');
+    "><b><img src="Paper.png" alt="Paper"></b></button>
+
+    
+    <button class="button" onclick="
+    computer_choice=comp_choice();
+    who_won(computer_choice, 'Scissors');
+    "><b><img src="Scissors.png" alt="Paper"></b></button>
+
+    
+
+    <h2 id="User"></h2>
+    <h2 id="Computer"></h2>
+    <h2 id="Result"></h2>
+    <h2 id="Score"></h2>
+
+    <button onclick="
+    localStorage.clear();
+    reset();
+    showRes();
+    "><b>RESET</b></button>
+
+    <script src="rps.js"></script>
+</body>
+</html> 
