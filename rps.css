@@ -1,0 +1,24 @@
+*{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+}
+.button{
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+img{
+    height: 65px;
+}
+@media screen and (min-width: 673px) {
+    .button{
+        height: 237px;
+        width: 203px;
+    }
+    img {
+        height: 155px;
+        }
+        
+}
